@@ -1,0 +1,36 @@
+title: 套路云
+description: Talk is cheap, show me the code.
+google_tag_manager: GTM-T484XC3
+google_analytics:
+
+header_pages:
+  - about.md
+
+# Plugins
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+
+# Conversion
+excerpt_separator   : "<!--more-->"
+
+# Serving
+url: "https://blog.taoluyun.net"
+baseurl: ""
+
+# Outputting
+show_excerpts: true
+highlighting-style: monokai-sublime
+permalink: pretty
+timezone: Asia/Shanghai
+paginate: 5
+paginate_path: "/page/:num/"
+
+sass:
+  style: compressed

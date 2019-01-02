@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post">
+  <header>
+    <div class="icon"></div>
+         <time datetime="{{ page.date | date_to_xmlschema }}"><a href="{{ page.url | relative_url }}">{{ page.date | date_to_string }}</a></time>
+  
+    <h1 class="title">{{ page.title | escape }}</h1>
+  </header>
+  <div class="entry">
+  {{ content }}
+  </div>
+</article>
+<nav id="pagination">
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}" class="next">
+      Next
+    </a>
+  {% endif %}
+
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title | escape }}" class="prev">
+      Previous
+    </a>
+  {% endif %}
+  <div class="clearfix"></div>
+</nav>

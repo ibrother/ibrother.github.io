@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// Color
+$color-background: #6C7989 !default;
+$color-font: #555 !default;
+$color-link: #069 !default;
+$color-strong: #222 !default;
+
+// Font
+$font-default: "Helvetica Neue", "Helvetica", Arial, sans-serif !default;
+$font-serif: "Georgia", serif !default;
+$font-mono: Monaco, Menlo, Consolas, Courier New, monospace !default;
+$font-title: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif !default;
+// $font-title: "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "STXihei", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", "SimHei", "Arial", sans-serif !default;
+
+$font-icon: iconfont;
+
+@font-face {
+  font-family: 'iconfont';  /* project id 973987 */
+  src: url('//at.alicdn.com/t/font_973987_eau062jzaq.eot');
+  src: url('//at.alicdn.com/t/font_973987_eau062jzaq.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_973987_eau062jzaq.woff') format('woff'),
+  url('//at.alicdn.com/t/font_973987_eau062jzaq.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_973987_eau062jzaq.svg#iconfont') format('svg');
+}
+
+
+// Width
+$page-width: 680px !default;
+
+
+// Import partials.
+@import
+  "modernist/base",
+  "modernist/header",
+  "modernist/article",
+  "modernist/index",
+  "modernist/footer",
+  "modernist/syntax"
+;

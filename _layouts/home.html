@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- if site.posts.size > 0 -%}
+  {%- if site.paginate -%}
+    {%- for post in paginator.posts -%}
+    {%- include post-list.html -%}
+    {%- endfor -%}
+    {%- include pagination.html -%}
+  {%- else -%}
+    {%- for post in site.posts -%}
+    {%- include post-list.html -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
